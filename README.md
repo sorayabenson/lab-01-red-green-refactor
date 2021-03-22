@@ -1,7 +1,7 @@
 # lab-01-red-green-refactor
 
 // TODO 
-getName
+//getName
     - returns the name property of an object
 
 copyAndPush
