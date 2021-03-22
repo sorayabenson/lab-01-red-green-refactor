@@ -1,5 +1,5 @@
 {
-  "name": "lab",
+  "name": "lab-01-red-green-refactor",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,5 +24,7 @@
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }
