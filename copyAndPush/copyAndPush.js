@@ -1,5 +1,5 @@
 const copyAndPush = (array, newItem) => {
-    const newArray = array;
+    const newArray = [...array];
     
     newArray.push(newItem);
 
