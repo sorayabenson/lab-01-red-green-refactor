@@ -1,8 +1,8 @@
-const getName = (object) => {
+const getName = ({ name }) => {
 
-    const name = object.name;
+    const onlyName = name;
 
-    return name;
+    return onlyName;
 };
 
 module.exports = getName;
