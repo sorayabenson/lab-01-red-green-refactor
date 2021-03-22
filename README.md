@@ -1,1 +1,1 @@
-# sorayabenson-lab-01-red-green-refactor
+# lab-01-red-green-refactor
