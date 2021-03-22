@@ -1,8 +1,6 @@
 const getName = ({ name }) => {
 
-    const onlyName = name;
-
-    return onlyName;
+    return name;
 };
 
 module.exports = getName;
