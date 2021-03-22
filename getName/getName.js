@@ -1,5 +1,4 @@
-const getName = (object) => {
-    const { name } = object;
+const getName = ({ name }) => {
 
     const onlyName = name;
 
