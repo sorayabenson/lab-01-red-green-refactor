@@ -1,14 +1,22 @@
+const uppercaseString = (string) => string.toUpperCase();
+
+const fFilter = (array) => {
+
+    const newArray = [];
+    array.map(string => {
+        if(string[0] != 'F') {
+            newArray.push(string);
+        }            
+    }); 
+    return newArray;
+};
+
 const capitalizeAndFilter = (array) => {
-    const filteredArray = [];
+    
+    const upperCaseArray = array.map(string => uppercaseString(string));
 
-    for(const string of array){
-        const result = string.toUpperCase();
-
-        if(result[0] != 'F') {
-            filteredArray.push(result);
-        }
-    }
-
+    const filteredArray = fFilter(upperCaseArray);
+      
     return filteredArray;
 
 };
