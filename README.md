@@ -10,7 +10,7 @@
 //capitalizeAndFilter
     - returns an array of strings capitalized and filter out any that starts with f
 
-fetchQuotes
+//fetchQuotes
     - returns one single quote with the format: { name:'', text:'', image: ''} from the futurama quote api
 
 bonus: mocks
