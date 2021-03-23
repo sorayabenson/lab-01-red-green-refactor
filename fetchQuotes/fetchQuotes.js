@@ -3,11 +3,11 @@ const fetch = require('node-fetch');
 const URL = 'http://futuramaapi.herokuapp.com/api/quotes';
 
 const mungeQuotes = (array) => {
-    array.map((quote) => {
-        return ({ name: quote.character, text: quote.quote, image: quote.image });
+    const shapedResponse = array.map((quote) => {
+        return { name: quote.character, text: quote.quote, image: quote.image };
     });
 
-    return array;
+    return shapedResponse;
 };
 
 const getRandomQuote = (array) => {
