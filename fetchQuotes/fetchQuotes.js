@@ -1,15 +1,27 @@
 const fetch = require('node-fetch');
 
-const fetchQuotes = async() => {
+const URL = 'http://futuramaapi.herokuapp.com/api/quotes';
 
-    const result = await fetch('http://futuramaapi.herokuapp.com/api/quotes');
-    const body = await result.json();
-
-    const mungedQuotes = body.map((quote) => {
+const mungeQuotes = (array) => {
+    array.map((quote) => {
         return ({ name: quote.character, text: quote.quote, image: quote.image });
     });
 
-    const randomQuote = mungedQuotes[Math.floor(Math.random() * mungedQuotes.length)];
+    return array;
+};
+
+const getRandomQuote = (array) => {
+    return array[Math.floor(Math.random() * array.length)];
+};
+
+const fetchQuotes = async() => {
+
+    const result = await fetch(URL);
+    const body = await result.json();
+
+    const mungedQuotes = mungeQuotes(body);
+
+    const randomQuote = getRandomQuote(mungedQuotes);
 
     return randomQuote;
 
