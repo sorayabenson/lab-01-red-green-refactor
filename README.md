@@ -7,7 +7,7 @@
 //copyAndPush
     - returns a new array with all the items in the original array and a new item pushed to the end
 
-capitalizeAndFilter
+//capitalizeAndFilter
     - returns an array of strings capitalized and filter out any that starts with f
 
 fetchQuotes
