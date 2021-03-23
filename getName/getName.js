@@ -1,7 +1,5 @@
-const getName = (object) => {
+const getName = ({ name }) => {
 
-    const name = object['name'];
-    
     return name;
 };
 
