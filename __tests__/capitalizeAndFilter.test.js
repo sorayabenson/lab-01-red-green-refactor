@@ -1,4 +1,4 @@
-const capitalizeAndFilter = require('./capitalizeAndFilter.js');
+const capitalizeAndFilter = require('../capitalizeAndFilter/capitalizeAndFilter.js');
 
 describe('capitalizeAndFilter function', () => {
     it('takes in array of strings, capitalizes them, and filters out any words that begin with f', () => {

@@ -1,4 +1,4 @@
-const copyAndPush = require('./copyAndPush.js');
+const copyAndPush = require('../copyAndPush/copyAndPush.js');
 
 describe('copyAndPush function', () => {
     it('takes in an array, makes a copy of it, and pushes a new item at the end of the array', () => {

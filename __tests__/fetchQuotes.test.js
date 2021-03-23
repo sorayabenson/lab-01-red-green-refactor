@@ -1,4 +1,4 @@
-const fetchQuotes = require('./fetchQuotes.js');
+const fetchQuotes = require('../fetchQuotes/fetchQuotes.js');
 
 describe('fetchQuotes function', () => {
     it('Return one single quote with the name, text, and image', async() => {
